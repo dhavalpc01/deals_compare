@@ -20,7 +20,7 @@ const HomePage = () => {
                 offers across multiple services.
               </p>
             </div>
-            {/* <PlatformSelector /> */}
+            <PlatformSelector />
           </div>
         </section>
 

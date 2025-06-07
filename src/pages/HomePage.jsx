@@ -6,7 +6,7 @@ import PlatformSelector from "../components/PlatformSelector"
 const HomePage = () => {
   return (
     <div className="flex min-h-screen flex-col">
-      {/* <Header /> */}
+      <Header />
       <main className="flex-1">
         {/* <HeroSection /> */}
         <section className="py-12 md:py-16 lg:py-20">

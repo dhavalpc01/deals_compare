@@ -1,8 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import HomePage from "./pages/HomePage"
-import BusBookingPage from "./pages/BusBookingPage"
-import FlightBookingPage from "./pages/FlightBookingPage"
-import "./App.css"
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import BusBookingPage from "./pages/BusBookingPage";
+import FlightBookingPage from "./pages/FlightBookingPage";
+import "./App.css";
 
 function AppRoute() {
   return (
@@ -15,7 +16,7 @@ function AppRoute() {
         </Routes>
       </div>
     </Router>
-  )
+  );
 }
 
-export default AppRoute
+export default AppRoute;

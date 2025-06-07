@@ -8,7 +8,7 @@ const HomePage = () => {
     <div className="flex min-h-screen flex-col">
       <Header />
       <main className="flex-1">
-        {/* <HeroSection /> */}
+        <HeroSection />
         <section className="py-12 md:py-16 lg:py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10">

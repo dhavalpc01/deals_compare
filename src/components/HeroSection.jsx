@@ -1,17 +1,15 @@
-"use client"
-
-import { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
-  const [mounted, setMounted] = useState(false)
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    setMounted(true)
-  }, [])
+    setMounted(true);
+  }, []);
 
   if (!mounted) {
-    return null
+    return null;
   }
 
   return (
@@ -30,8 +28,9 @@ const HeroSection = () => {
                 Your Ultimate Travel Companion
               </h1>
               <p className="mt-4 text-lg text-gray-600 max-w-[600px] mx-auto lg:mx-0 animate-fade-in-delay">
-                Book tickets, find the best deals, and explore amazing destinations all in one place. Start your journey
-                with TravelEase today.
+                Book tickets, find the best deals, and explore amazing
+                destinations all in one place. Start your journey with
+                TravelEase today.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start animate-fade-in-delay-2">
@@ -50,7 +49,11 @@ const HeroSection = () => {
             <div className="relative w-full max-w-[500px] aspect-square">
               <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 rounded-lg shadow-xl flex items-center justify-center">
                 <div className="text-white text-center">
-                  <svg className="w-32 h-32 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                  <svg
+                    className="w-32 h-32 mx-auto mb-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
                     <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
                   </svg>
                   <h3 className="text-2xl font-bold">Travel Anywhere</h3>
@@ -59,18 +62,22 @@ const HeroSection = () => {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-white rounded-lg shadow-lg p-4 w-40">
                 <div className="text-sm font-medium">Popular Destinations</div>
-                <div className="text-xs text-gray-600 mt-1">Explore 1000+ destinations</div>
+                <div className="text-xs text-gray-600 mt-1">
+                  Explore 1000+ destinations
+                </div>
               </div>
               <div className="absolute -top-6 -left-6 bg-white rounded-lg shadow-lg p-4 w-40">
                 <div className="text-sm font-medium">Best Offers</div>
-                <div className="text-xs text-gray-600 mt-1">Save up to 40% on bookings</div>
+                <div className="text-xs text-gray-600 mt-1">
+                  Save up to 40% on bookings
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HeroSection
+export default HeroSection;

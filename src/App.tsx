@@ -13,8 +13,8 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/bus-booking" element={<BusBookingPage />} />
-          <Route path="/flight-booking" element={<FlightBookingPage />} />
+          {/* <Route path="/bus-booking" element={<BusBookingPage />} /> */}
+          {/* <Route path="/flight-booking" element={<FlightBookingPage />} /> */}
         </Routes>
       </Router>
       {/* </div> */}

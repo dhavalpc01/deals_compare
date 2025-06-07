@@ -6,9 +6,9 @@ import PlatformSelector from "../components/PlatformSelector"
 const HomePage = () => {
   return (
     <div className="flex min-h-screen flex-col">
-      <Header />
+      {/* <Header /> */}
       <main className="flex-1">
-        <HeroSection />
+        {/* <HeroSection /> */}
         <section className="py-12 md:py-16 lg:py-20">
           <div className="container mx-auto px-4">
             <div className="text-center mb-10">
@@ -20,7 +20,7 @@ const HomePage = () => {
                 offers across multiple services.
               </p>
             </div>
-            <PlatformSelector />
+            {/* <PlatformSelector /> */}
           </div>
         </section>
 

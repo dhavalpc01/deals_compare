@@ -32,6 +32,7 @@ function App() {
         >
           Learn React
         </a>
+        <HomePage />
       </header>
     </div>
   );

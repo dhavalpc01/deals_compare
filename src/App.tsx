@@ -9,16 +9,16 @@ import FlightBookingPage from "./pages/FlightBookingPage";
 function App() {
   return (
     <div className="App">
-      <Router>
-        {/* <div className="App"> */}
-          <Routes>
-            <Route path="/deals_compare" element={<HomePage />} />
+      {/* <Router> */}
+      {/* <div className="App"> */}
+      {/* <Routes>
+            <Route path="/" element={<HomePage />} />
             <Route path="/bus-booking" element={<BusBookingPage />} />
             <Route path="/flight-booking" element={<FlightBookingPage />} />
-          </Routes>
-        {/* </div> */}
-      </Router>
-      {/* <header className="App-header">
+          </Routes> */}
+      {/* </div> */}
+      {/* </Router> */}
+      <header className="App-header">
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -32,7 +32,7 @@ function App() {
         >
           Learn React
         </a>
-      </header> */}
+      </header>
     </div>
   );
 }

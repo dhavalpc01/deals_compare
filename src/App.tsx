@@ -1,7 +1,8 @@
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+// import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import BusBookingPage from "./pages/BusBookingPage";
 import FlightBookingPage from "./pages/FlightBookingPage";
@@ -10,6 +11,13 @@ import AppRoute from "./AppRoute";
 function App() {
   return (
     <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/bus-booking" element={<BusBookingPage />} />
+          <Route path="/flight-booking" element={<FlightBookingPage />} />
+        </Routes>
+      </Router>
       {/* <div className="App"> */}
       {/* <Router>
         <Routes>
@@ -34,7 +42,7 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <AppRoute />
+      {/* <AppRoute /> */}
     </div>
   );
 }

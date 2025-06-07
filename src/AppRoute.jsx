@@ -4,10 +4,10 @@ import BusBookingPage from "./pages/BusBookingPage"
 import FlightBookingPage from "./pages/FlightBookingPage"
 import "./App.css"
 
-function App() {
+function AppRoute() {
   return (
     <Router>
-      <div className="App">
+      <div className="AppRoute">
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/bus-booking" element={<BusBookingPage />} />
@@ -18,4 +18,4 @@ function App() {
   )
 }
 
-export default App
+export default AppRoute

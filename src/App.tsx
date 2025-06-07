@@ -5,18 +5,19 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import BusBookingPage from "./pages/BusBookingPage";
 import FlightBookingPage from "./pages/FlightBookingPage";
+import AppRoute from "./AppRoute";
 
 function App() {
   return (
     <div className="App">
       {/* <div className="App"> */}
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          {/* <Route path="/bus-booking" element={<BusBookingPage />} /> */}
-          {/* <Route path="/flight-booking" element={<FlightBookingPage />} /> */}
+          <Route path="/bus-booking" element={<BusBookingPage />} />
+          <Route path="/flight-booking" element={<FlightBookingPage />} />
         </Routes>
-      </Router>
+      </Router> */}
       {/* </div> */}
       {/* <header className="App-header">
         <h1 className="text-3xl font-bold underline">Hello world!</h1>
@@ -33,6 +34,7 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <AppRoute />
     </div>
   );
 }
